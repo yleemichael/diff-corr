@@ -49,7 +49,7 @@ Code Execution
 
 `differential_correlation_network_analysis('sample_data', 1000)`
 
-Three arguments are required.
+Two arguments are required.
 - filename - located in `data/` directory (e.g. `'sample_data'`).
 - total_permutations - 1000 is standard to attain a precise p value. Can increase or decrease at your discretion.
 Increasing will lengthen runtime. Decreasing will reduce precision.
