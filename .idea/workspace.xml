@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b8ffabf-b634-4445-84cf-6d3cc59b7fc5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +24,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="csv" value="8" />
+          <entry key="gitignore" value="2" />
           <entry key="md" value="1" />
           <entry key="py" value="1" />
         </counts>
@@ -34,12 +32,13 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="10" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="12" />
           <entry key="md" value="4600" />
           <entry key="py" value="450" />
         </counts>
@@ -47,6 +46,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="4600" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="Python" value="450" />
         </counts>
       </usages-collector>
@@ -57,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="346" lean-forward="true" selection-start-line="346" selection-end-line="346" />
+            <state relative-caret-position="210">
+              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding>
                 <element signature="e#534#555#0" expanded="true" />
               </folding>
@@ -66,14 +66,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="542">
-                <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <first_editor relative-caret-position="207">
+                <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -102,6 +111,7 @@
       <list>
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -275,8 +285,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="346" lean-forward="true" selection-start-line="346" selection-end-line="346" />
+        <state relative-caret-position="210">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding>
             <element signature="e#534#555#0" expanded="true" />
           </folding>
@@ -286,10 +296,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="542">
-            <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <first_editor relative-caret-position="207">
+            <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
