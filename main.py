@@ -3,12 +3,6 @@ import pandas as pd
 import numpy as np
 from random import randint
 from scipy.stats import pearsonr
-from timeit import default_timer as timer
-
-'''
-For Timing Benchmarks
-start = timer()
-'''
 
 def separate_groups(df_raw):
     #Initiate Control (df[0]) and Case (df[1]) DataFrames.
@@ -129,12 +123,6 @@ def get_p_values(df_list, nparr_dc, n_tuple, total_permutations):
     nparr_p = np.zeros((np.size(nparr_dc, 0), np.size(nparr_dc, 1)))
 
     for i, permutation_n in enumerate(range(total_permutations)):
-        '''
-        For Timing Benchmarks
-        print(i)
-        print(timer())
-        '''
-
         df_list_copy = df_list.copy()
 
         for n_swap in range(total_swaps):
@@ -183,22 +171,6 @@ def create_network(df_list):
 
     return G.edges()
 
-
-'''
-Visualize the Complex Network
-def visualize_network(G):
-    get_ipython().run_line_magic('matplotlib', 'notebook')
-    import matplotlib.pyplot as plt
-
-    plt.figure()
-    pos = nx.spring_layout(G)
-    edges = G.edges()
-    weights = [np.absolute(G[u][v]['weight']) for u,v in edges]
-    colors = [G[u][v]['color'] for u,v in edges]
-
-    nx.draw_networkx(G, pos, edges=edges, edge_color=colors, width=weights);
-'''
-
 def create_df_output(edges, dfs_r, arrs_r_p, nparr_dc, nparr_p, isolate_diff_corr_signs, total_permutations):
     df_output = pd.DataFrame(columns=['Metabolite_1', 'Metabolite_2', 'Control_Corr', 'Control_p', 'Case_Corr', 'Case_p', 'Diff_Corr', 'Diff_Corr_p', 'Sign'])
     for i in range(len(edges)):
@@ -234,24 +206,6 @@ def create_df_output(edges, dfs_r, arrs_r_p, nparr_dc, nparr_p, isolate_diff_cor
             # Control pearsons p
             elif i == 0:
                 df_output.iloc[j, 5] = p
-    '''
-    for i, nparr_r_p in enumerate(nparrs_r_p):
-        added_count = 0
-        for j, row in enumerate(nparr_r_p):
-            skip_count = 1 + j
-            for k, p in enumerate(row):
-                if skip_count > 0:
-                    skip_count -= 1
-                    continue
-                else:
-                    # Case pearsons p
-                    if i == 1:
-                        df_output.iloc[added_count, 3] = p
-                    # Control pearsons p
-                    else:
-                        df_output.iloc[added_count, 5] = p
-                added_count += 1
-    '''
 
     added_count = 0
     for i, row in enumerate(nparr_dc):
@@ -338,11 +292,5 @@ def differential_correlation_network_analysis(filename, total_permutations, sign
 
     if output_isolated_significant:
         write_df_sig_output(filename, df_output, significance_level, total_permutations)
-
-    '''
-    For timing benchmarks
-    duration = timer() - start
-    print(duration)
-    '''
 
 differential_correlation_network_analysis('sample_data', 1000, 0.05, True, True)
